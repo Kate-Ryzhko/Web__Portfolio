@@ -1,0 +1,233 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-image: url(BackgroundImg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  padding-inline: 120px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 24px;
+}
+
+.top-bar__social {
+  display: flex;
+  gap: 16px;
+}
+
+.top-bar__logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.top-bar__logo:hover {
+  transform: scale(1.2);
+}
+
+.top-bar__icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon--phone {
+  background-image: url(Icon-Phone-call.svg);
+  cursor: pointer;
+  position: relative;
+}
+
+.icon--phone:hover::after {
+  content: "+380 (67) 944-11-50";
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700; line-height: 16px;
+  letter-spacing: 2px;
+  text-align: right;
+  width: 138px;
+  height: 16px;
+  right: 52px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
+
+.about-section {
+  background-color: #0d1b2a;
+  padding: 80px 0;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+}
+
+.about-us__title {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+}
+
+.about-us__description {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.skills-section {
+  padding: 0 0 30px 0;
+  color: #ffffff;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.skills-title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.skills-description {
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 400;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skills-description p {
+  margin-bottom: 20px;
+}
+
+.my-projects {
+  color: #ffffff; 
+  padding: 60px 0; 
+}
+
+.my-projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.my-projects .section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  background-color: #2a2e3b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 15px;
+  margin: 0;
+  background-color: #333a47;
+  color: #fff;
+}
+
+.project-card p {
+  font-size: 16px;
+  padding: 15px;
+  color: #bbb;
+}
+
+.project-card .btn {
+  display: inline-block;
+  background-color: #ff5f5f;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #ff3f3f;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
